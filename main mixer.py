@@ -37,6 +37,9 @@ song6 = ['With Me (Instrumental Version) - Sonic and the Black Knight [OST].mp3'
 PLAYLIST.append(song6)
 song7 = ['Catch Me If You Can (Instrumental).mp3','Catch Me If You Can.mp3']
 PLAYLIST.append(song7)
+song8 = ["A Ghost's Pumpkin Soup - Pumpkin Hill (Instrumental).mp3", "A Ghost's Pumpkin Soup (Pumpkin Hill) - Sonic Adventure 2 [OST].mp3"]
+PLAYLIST.append(song8)
+song9 = ["Unknown from M.E. ver.1 (Instrumental).mp3", "Unknown from M.E. ver.1.mp3"]
 
 def select_random_track():
     """Randomly selects a song's instrumental version"""
@@ -53,10 +56,11 @@ def play_next_track():
     return next_track
 
 def reset():
-    minTime = 10
+    minTime = 15
     maxTime = 60
     global current_track
     current_track = play_next_track()
+    global elapsed_time
     elapsed_time = 0
     global swap_occurred 
     swap_occured = False
