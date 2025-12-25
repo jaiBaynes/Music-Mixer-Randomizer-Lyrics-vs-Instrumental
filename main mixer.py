@@ -40,6 +40,7 @@ PLAYLIST.append(song7)
 song8 = ["A Ghost's Pumpkin Soup - Pumpkin Hill (Instrumental).mp3", "A Ghost's Pumpkin Soup (Pumpkin Hill) - Sonic Adventure 2 [OST].mp3"]
 PLAYLIST.append(song8)
 song9 = ["Unknown from M.E. ver.1 (Instrumental).mp3", "Unknown from M.E. ver.1.mp3"]
+PLAYLIST.append(song9)
 
 def select_random_track():
     """Randomly selects a song's instrumental version"""
@@ -63,7 +64,7 @@ def reset():
     global elapsed_time
     elapsed_time = 0
     global swap_occurred 
-    swap_occured = False
+    swap_occurred = False
     global randoSwap
     randoSwap = random.uniform(minTime, maxTime)  # Random time to swap
     print(randoSwap)    
