@@ -57,8 +57,8 @@ def play_next_track():
     return next_track
 
 def reset():
-    minTime = 15
-    maxTime = 60
+    minTime = 30
+    maxTime = 150
     global current_track
     current_track = play_next_track()
     global elapsed_time
